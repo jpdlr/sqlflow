@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "sqlflow-app/public",
+    "public": "sqlflow-app/build",
     "ignore": [
       "firebase.json",
       "**/.*",
