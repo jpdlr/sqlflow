@@ -1,0 +1,11 @@
+{
+  "name": "sql-viewer-root",
+  "private": true,
+  "scripts": {
+    "install:app": "npm --prefix sqlflow-app install",
+    "build:app": "npm --prefix sqlflow-app run build",
+    "deploy": "npm --prefix sqlflow-app run build && firebase deploy --only hosting",
+    "deploy:firebase": "npm --prefix sqlflow-app run build && firebase deploy --only hosting"
+  }
+}
+
