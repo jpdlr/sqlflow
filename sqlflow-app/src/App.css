@@ -1,0 +1,156 @@
+/* Custom styles for React Flow and other components that need CSS overrides */
+
+/* React Flow custom styles for dark theme */
+.react-flow {
+  background-color: #0A0A0A !important;
+}
+
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
+
+.react-flow__edge-text {
+  font-size: 12px;
+  font-weight: 500;
+  fill: #ffffff;
+}
+
+.react-flow__controls {
+  background-color: rgba(26, 26, 26, 0.9) !important;
+  border: 1px solid #333333 !important;
+  border-radius: 8px !important;
+}
+
+.react-flow__controls-button {
+  background-color: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.react-flow__background {
+  background-color: #0A0A0A !important;
+}
+
+/* Custom scrollbar styles for consistency */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Ensure proper font loading */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global styles that work with MUI theme */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Prism.js overrides for dark theme */
+.language-sql {
+  background: #2A2A2A !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+}
+
+.token.keyword {
+  color: #4285F4 !important;
+}
+
+.token.string {
+  color: #34A853 !important;
+}
+
+.token.number {
+  color: #FFA726 !important;
+}
+
+.token.comment {
+  color: #666666 !important;
+}
+
+/* Material-UI component overrides */
+.MuiDrawer-paper {
+  background-color: #1A1A1A !important;
+  border-color: #333333 !important;
+}
+
+.MuiCard-root {
+  background-color: #1E1E1E !important;
+  border: 1px solid #333333 !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+  background-color: #2A2A2A !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #404040 !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #4285F4 !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #4285F4 !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .MuiDrawer-paper {
+    width: 100% !important;
+  }
+}
+
+/* Loading and animation styles */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
