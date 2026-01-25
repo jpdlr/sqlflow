@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && firebase deploy --only hosting --config ../firebase.json --project sql-flow-za"
+    "deploy": "npm run build && firebase deploy --only hosting --config ../firebase.json"
   },
   "eslintConfig": {
     "extends": [
